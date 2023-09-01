@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Pokédex</title>
+        <link rel="icon" href="Images/pokedex-icon-19.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="CSS/pokcss.css">
+        <link rel="stylesheet" href="CSS/jquery-ui.css">
+        <link rel="stylesheet" href="CSS/jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+                crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body style="background-color:  rgb(194, 20, 20);">
+
+        <div id="container">
+                <h2> Pokédex </h2>
+                <div class="menu" id="menu">
+
+                        <button id="Addgrupo">Novo Grupo</button>
+                </div>
+                <div id="grupos">
+                        <ul class="main" id="main">
+                                <li class="grup"><a href="#desconhecidos">Desconhecidos</a></li>
+                                <li class="grup"><a href="#vistos">Vistos</a></li>
+                                <li class="grup"><a href="#capturados">Capturados</a></li>
+
+                        </ul>
+
+
+
+                        <ol class="ols" id="desconhecidos">
+                                <li>001&nbsp&nbsp<img src="Images/Poke desconhecido/001desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>002&nbsp&nbsp<img src="Images/Poke desconhecido/002desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>003&nbsp&nbsp&nbsp<img src="Images/Poke desconhecido/003desc.png"><input
+                                                type="checkbox" class="visto"> Visto <input type="checkbox" class="cap">
+                                        Capturado
+                                </li>
+                                <li>004&nbsp&nbsp<img src="Images/Poke desconhecido/004desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>005&nbsp&nbsp<img src="Images/Poke desconhecido/005desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>006 &nbsp&nbsp<img src="Images/Poke desconhecido/006desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>007&nbsp&nbsp<img src="Images/Poke desconhecido/007desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>008&nbsp&nbsp<img src="Images/Poke desconhecido/008desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>009&nbsp&nbsp<img src="Images/Poke desconhecido/009desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>010&nbsp&nbsp<img src="Images/Poke desconhecido/010desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>011&nbsp&nbsp<img src="Images/Poke desconhecido/011desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>012&nbsp&nbsp<img src="Images/Poke desconhecido/012desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>013&nbsp&nbsp<img src="Images/Poke desconhecido/013desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>014&nbsp&nbsp<img src="Images/Poke desconhecido/014desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>015&nbsp&nbsp<img src="Images/Poke desconhecido/015desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>016&nbsp&nbsp<img src="Images/Poke desconhecido/016desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>017&nbsp&nbsp<img src="Images/Poke desconhecido/017desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>018&nbsp&nbsp<img src="Images/Poke desconhecido/018desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>019&nbsp&nbsp<img src="Images/Poke desconhecido/019desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>020&nbsp&nbsp<img src="Images/Poke desconhecido/020desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>021&nbsp&nbsp<img src="Images/Poke desconhecido/021desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>022&nbsp&nbsp<img src="Images/Poke desconhecido/022desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>023&nbsp&nbsp<img src="Images/Poke desconhecido/023desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>024&nbsp&nbsp<img src="Images/Poke desconhecido/024desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>025&nbsp&nbsp<img src="Images/Poke desconhecido/025desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>026&nbsp&nbsp<img src="Images/Poke desconhecido/026desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>027&nbsp&nbsp<img src="Images/Poke desconhecido/027desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>028&nbsp&nbsp<img src="Images/Poke desconhecido/028desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>029&nbsp&nbsp<img src="Images/Poke desconhecido/029desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>030&nbsp&nbsp<img src="Images/Poke desconhecido/030desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>031&nbsp&nbsp<img src="Images/Poke desconhecido/031desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>032&nbsp&nbsp<img src="Images/Poke desconhecido/032desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>033&nbsp&nbsp<img src="Images/Poke desconhecido/033desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>034&nbsp&nbsp<img src="Images/Poke desconhecido/034desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>035&nbsp&nbsp<img src="Images/Poke desconhecido/035desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>036&nbsp&nbsp<img src="Images/Poke desconhecido/036desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>037&nbsp&nbsp<img src="Images/Poke desconhecido/037desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>038&nbsp&nbsp<img src="Images/Poke desconhecido/038desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>039&nbsp&nbsp<img src="Images/Poke desconhecido/039desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>040&nbsp&nbsp<img src="Images/Poke desconhecido/040desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>041&nbsp&nbsp<img src="Images/Poke desconhecido/041desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>042&nbsp&nbsp<img src="Images/Poke desconhecido/042desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>043&nbsp&nbsp<img src="Images/Poke desconhecido/043desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>044&nbsp&nbsp<img src="Images/Poke desconhecido/044desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>045&nbsp&nbsp<img src="Images/Poke desconhecido/045desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>046&nbsp&nbsp<img src="Images/Poke desconhecido/046desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>047&nbsp&nbsp<img src="Images/Poke desconhecido/047desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>048&nbsp&nbsp<img src="Images/Poke desconhecido/048desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>049&nbsp&nbsp<img src="Images/Poke desconhecido/049desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>050&nbsp&nbsp<img src="Images/Poke desconhecido/050desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>051&nbsp&nbsp<img src="Images/Poke desconhecido/051desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>052&nbsp&nbsp<img src="Images/Poke desconhecido/052desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>053&nbsp&nbsp<img src="Images/Poke desconhecido/053desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>054&nbsp&nbsp<img src="Images/Poke desconhecido/054desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>055&nbsp&nbsp<img src="Images/Poke desconhecido/055desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>056&nbsp&nbsp<img src="Images/Poke desconhecido/056desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>057&nbsp&nbsp<img src="Images/Poke desconhecido/057desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>058&nbsp&nbsp<img src="Images/Poke desconhecido/058desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>059&nbsp&nbsp<img src="Images/Poke desconhecido/059desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>060&nbsp&nbsp<img src="Images/Poke desconhecido/060desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>061&nbsp&nbsp<img src="Images/Poke desconhecido/061desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>062&nbsp&nbsp<img src="Images/Poke desconhecido/062desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>063&nbsp&nbsp<img src="Images/Poke desconhecido/063desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>064&nbsp&nbsp<img src="Images/Poke desconhecido/064desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>065&nbsp&nbsp<img src="Images/Poke desconhecido/065desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>066&nbsp&nbsp<img src="Images/Poke desconhecido/066desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>067&nbsp&nbsp<img src="Images/Poke desconhecido/067desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>068&nbsp&nbsp<img src="Images/Poke desconhecido/068desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>069&nbsp&nbsp<img src="Images/Poke desconhecido/069desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>070&nbsp&nbsp<img src="Images/Poke desconhecido/070desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>071&nbsp&nbsp<img src="Images/Poke desconhecido/071desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>072&nbsp&nbsp<img src="Images/Poke desconhecido/072desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>073&nbsp&nbsp<img src="Images/Poke desconhecido/073desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>074&nbsp&nbsp<img src="Images/Poke desconhecido/074desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>075&nbsp&nbsp<img src="Images/Poke desconhecido/075desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>076&nbsp&nbsp<img src="Images/Poke desconhecido/076desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>077&nbsp&nbsp<img src="Images/Poke desconhecido/077desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>078&nbsp&nbsp<img src="Images/Poke desconhecido/078desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>079&nbsp&nbsp<img src="Images/Poke desconhecido/079desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>080&nbsp&nbsp<img src="Images/Poke desconhecido/080desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>081&nbsp&nbsp<img src="Images/Poke desconhecido/081desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>082&nbsp&nbsp<img src="Images/Poke desconhecido/082desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>083&nbsp&nbsp<img src="Images/Poke desconhecido/083desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>084&nbsp&nbsp<img src="Images/Poke desconhecido/084desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>085&nbsp&nbsp<img src="Images/Poke desconhecido/085desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>086&nbsp&nbsp<img src="Images/Poke desconhecido/086desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>087&nbsp&nbsp<img src="Images/Poke desconhecido/087desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>088&nbsp&nbsp<img src="Images/Poke desconhecido/088desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>089&nbsp&nbsp<img src="Images/Poke desconhecido/089desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>090&nbsp&nbsp<img src="Images/Poke desconhecido/090desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>091&nbsp&nbsp<img src="Images/Poke desconhecido/091desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>092&nbsp&nbsp<img src="Images/Poke desconhecido/092desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>093&nbsp&nbsp<img src="Images/Poke desconhecido/093desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>094&nbsp&nbsp<img src="Images/Poke desconhecido/094desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>095&nbsp&nbsp<img src="Images/Poke desconhecido/095desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>096&nbsp&nbsp<img src="Images/Poke desconhecido/096desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>097&nbsp&nbsp<img src="Images/Poke desconhecido/097desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>098&nbsp&nbsp<img src="Images/Poke desconhecido/098desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>099&nbsp&nbsp<img src="Images/Poke desconhecido/099desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>100&nbsp&nbsp<img src="Images/Poke desconhecido/100desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>101&nbsp&nbsp<img src="Images/Poke desconhecido/101desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>102&nbsp&nbsp<img src="Images/Poke desconhecido/102desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>103&nbsp&nbsp<img src="Images/Poke desconhecido/103desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>104&nbsp&nbsp<img src="Images/Poke desconhecido/104desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>105&nbsp&nbsp<img src="Images/Poke desconhecido/105desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>106&nbsp&nbsp<img src="Images/Poke desconhecido/106desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>107&nbsp&nbsp<img src="Images/Poke desconhecido/107desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>108&nbsp&nbsp<img src="Images/Poke desconhecido/108desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>109&nbsp&nbsp<img src="Images/Poke desconhecido/109desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>110&nbsp&nbsp<img src="Images/Poke desconhecido/110desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>111&nbsp&nbsp<img src="Images/Poke desconhecido/111desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>112&nbsp&nbsp<img src="Images/Poke desconhecido/112desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>113&nbsp&nbsp<img src="Images/Poke desconhecido/113desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>114&nbsp&nbsp<img src="Images/Poke desconhecido/114desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>115&nbsp&nbsp<img src="Images/Poke desconhecido/115desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>116&nbsp&nbsp<img src="Images/Poke desconhecido/116desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>117&nbsp&nbsp<img src="Images/Poke desconhecido/117desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>118&nbsp&nbsp<img src="Images/Poke desconhecido/118desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>119&nbsp&nbsp<img src="Images/Poke desconhecido/119desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>120&nbsp&nbsp<img src="Images/Poke desconhecido/120desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>121&nbsp&nbsp<img src="Images/Poke desconhecido/121desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>122&nbsp&nbsp<img src="Images/Poke desconhecido/122desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>123&nbsp&nbsp<img src="Images/Poke desconhecido/123desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>124&nbsp&nbsp<img src="Images/Poke desconhecido/124desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>125&nbsp&nbsp<img src="Images/Poke desconhecido/125desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>126&nbsp&nbsp<img src="Images/Poke desconhecido/126desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>127&nbsp&nbsp<img src="Images/Poke desconhecido/127desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>128&nbsp&nbsp<img src="Images/Poke desconhecido/128desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>129&nbsp&nbsp<img src="Images/Poke desconhecido/129desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>130&nbsp&nbsp<img src="Images/Poke desconhecido/130desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>131&nbsp&nbsp<img src="Images/Poke desconhecido/131desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>132&nbsp&nbsp<img src="Images/Poke desconhecido/132desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>133&nbsp&nbsp<img src="Images/Poke desconhecido/133desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>134&nbsp&nbsp<img src="Images/Poke desconhecido/134desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>135&nbsp&nbsp<img src="Images/Poke desconhecido/135desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>136&nbsp&nbsp<img src="Images/Poke desconhecido/136desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>137&nbsp&nbsp<img src="Images/Poke desconhecido/137desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>138&nbsp&nbsp<img src="Images/Poke desconhecido/138desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>139&nbsp&nbsp<img src="Images/Poke desconhecido/139desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>140&nbsp&nbsp<img src="Images/Poke desconhecido/140desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>141&nbsp&nbsp<img src="Images/Poke desconhecido/141desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>142&nbsp&nbsp<img src="Images/Poke desconhecido/142desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>143&nbsp&nbsp<img src="Images/Poke desconhecido/143desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>144&nbsp&nbsp<img src="Images/Poke desconhecido/144desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>145&nbsp&nbsp<img src="Images/Poke desconhecido/145desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>146&nbsp&nbsp<img src="Images/Poke desconhecido/146desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>147&nbsp&nbsp<img src="Images/Poke desconhecido/147desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>148&nbsp&nbsp<img src="Images/Poke desconhecido/148desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>149&nbsp&nbsp<img src="Images/Poke desconhecido/149desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>150&nbsp&nbsp<img src="Images/Poke desconhecido/150desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+                                <li>151&nbsp&nbsp<img src="Images/Poke desconhecido/151desc.png"><input type="checkbox"
+                                                class="visto"> Visto <input type="checkbox" class="cap"> Capturado</li>
+
+                        </ol>
+                        <ol class="ols" id="vistos">
+
+                        </ol>
+                        <ol class="ols" id="capturados">
+
+                        </ol>
+
+                </div>
+
+                <button id="Addpokemon">Adicionar Pokémon</button>
+        </div>
+        <div id="grupo-dialog" title="Adicionar Grupo" style="display:none;">
+                <label for="novo-grupo">Nome grupo</label>
+                <input id="novo-grupo" type="text">
+        </div>
+        <div id="pokemon-dilaog" title="Adicionar Pokemon" style="display: none;">
+                <label for="pokemo" id="labpok">Selecione o Pokémon</label>
+                <select name=" Pokemons" id="pokemo">
+                        <option value="" disabled selected>MissingNo</option>
+                </select>
+                <div id="Sel">
+                        <img class="Selec" src="Images/MissingNo.png">
+                        <p class="pik">000 MissingNo</p>
+                </div>
+        </div>
+        <div id="erpok-dialog" title="MissingNo" style="display: none;">
+                <img class="Selec" src="Images/MissingNo.png">
+                <label>Numero não encontrado...<br /></label>
+                <label>Por favor selecione um Pokémon</label>
+        </div>
+        <div id="ergrup-dialog" title="Erro" style="display: none;">
+                <label>Por favor insira um nome <br />
+                        ao novo grupo</label>
+        </div>
+        <div id="certpok-dialog" title="PARABÉNS" style="display: none;">
+                <label id="cerify">Este documento é emitido em <br />reconhecimento à sua magnífica <br /> conquista - a
+                        conclusão da Pokédex de Kanto</label>
+        </div>
+        <div id="grid" style="display: none;">
+                <div id="img">
+                        <img class="gridimg" src="Images/MissingNo.png">
+                        <p class="gridp">000 MissingNo</p>
+                        
+                </div>
+                <div id="especfic">
+                        
+                        <span>
+                        <h4>Tipagem:</h3>
+                        <ul class="grup" id="tips">
+                                <li id="tip1">Tipo 1</li>
+                                <li id="tip2">Tipo 2</li>
+                        </ul>
+                        </span>
+                        <ul class="grup"id="espec">
+                                <li id="altura">Altura: 0.0m</li>
+                                <li id="peso">Peso: 0.0kg</li>
+                        </ul>
+                </div>
+                <div id="opti">
+                        <img src="Images/Shineicon.png" id="shiny">
+                        <img src="Images/Audio.png" id="grito">
+                        <audio src="Audio/botãoA.mp3" id="crie"></audio>
+                </div>
+                <div id="descri">
+                        <img src="Images/play.png" id="ad">
+                        <audio id="aduiodescricao" src=""></audio></audio>
+                        <p>pokémon não encontrado<br/>
+                                Pokémon nova espécie.<br/> Se mostra apenas para pessoas de coração puro. Seu DNA contém códigos genéticos de todos os pokémons. Como é capaz de aprender qualquer tipo de golpe, muitos cientistas acreditam que ele é o antepassado de todos os pokémons.
+                        </p>
+                </div>
+        </div>
+        <script src="JS/pokjs.js"></script>
+</body>
+
+</html> 
